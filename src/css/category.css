@@ -1,0 +1,40 @@
+.category:hover {
+    border: 7px solid rgb(189,170,142);
+    cursor: pointer;
+}
+
+.category:hover p{
+    color: rgb(189,170,142)
+}
+
+.category:hover h1{
+    color: rgb(189,170,142)
+}
+
+.category {
+    border: 7px solid white;
+    height: 300px; 
+    width: 20%; 
+    background-color: black; 
+    border-radius: 5%; 
+    margin: 1%;
+    display: inline-block;
+}
+
+.category p, .category h1{
+    color: #fff;
+    text-align: center;
+}
+
+.category_h1 {
+    color: #fff; 
+    font-family:sans-serif; 
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center;
+}
+
+.category_div {
+    display: flex; 
+    justify-content: center;
+}

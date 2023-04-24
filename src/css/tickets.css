@@ -1,0 +1,130 @@
+.tickets_h1 {
+    color: #fff; 
+    font-family:sans-serif; 
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center;
+}
+
+.tickets_div {
+    display: flex; 
+    justify-content: center;
+}
+
+.tickets_card_1 {
+    height: 300px; 
+    width: 20%; 
+    background-color: #fff; 
+    border-radius: 5%; 
+    margin: 1%; 
+    display: inline-block; 
+    text-align: center; 
+    border-top: 15px solid rgb(189,170,142); 
+    box-shadow: -5px 5px 10px grey;
+}
+
+.tickets_card_1_h1 {
+    font-size: 25px; 
+    margin: 10px 0 10px 0; 
+    font-family: monospace;
+}
+
+.tickets_card_1_h1_price {
+    font-size: 40px; 
+    margin: 0; 
+    font-family: monospace;
+}
+
+.tickets_card_h3 {
+    color: rgba(0,0,0,0.7); 
+    font-family: monospace;
+}
+
+.tickets_card_h3_info {
+    color: rgba(0,0,0,0.4); 
+    font-family: monospace;
+}
+
+.tickets_card_2_div {
+    height: 300px; 
+    width: 20%; 
+    background-color: #fff; 
+    border-radius: 5%; 
+    margin: 1%; 
+    display: inline-block; 
+    text-align: center; 
+    border-top: 15px solid blue; 
+    box-shadow: -5px 5px 10px grey;
+}
+
+.tickets_card_2_h1 {
+    color: blue; 
+    font-size: 25px; 
+    margin: 10px 0 10px 0; 
+    font-family: monospace;
+}
+
+.tickets_card_2_h1_price {
+    color: blue; 
+    font-size: 40px; 
+    margin: 0; 
+    font-family: monospace;
+}
+
+.tickets_card_3_div {
+    height: 300px; 
+    width: 20%; 
+    background-color: #fff; 
+    border-radius: 5%; 
+    margin: 1%; 
+    display: inline-block; 
+    text-align: center; 
+    border-top: 15px solid red; 
+    box-shadow: -5px 5px 10px grey;
+}
+
+.tickets_card_3_h1 {
+    color: red; 
+    font-size: 25px; 
+    margin: 10px 0 10px 0; 
+    font-family: monospace;
+}
+
+.tickets_card_3_h1_price {
+    color: red; 
+    font-size: 40px; 
+    margin: 0; 
+    font-family: monospace;
+}
+
+.tickets_card_1_btn {
+    margin-top: 15px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    height: 50px; 
+    width: 170px; 
+    color: black; 
+    background-color: transparent;
+}
+
+.tickets_card_2_btn {
+    margin-top: 15px; 
+    border: 2px solid blue; 
+    cursor: pointer; 
+    font-size: 20px; 
+    height: 50px; 
+    width: 170px; 
+    color: blue; 
+    background-color: transparent;
+}
+
+.tickets_card_3_btn {
+    margin-top: 15px; 
+    border: 2px solid red; 
+    cursor: pointer; 
+    font-size: 20px; 
+    height: 50px; 
+    width: 170px; 
+    color: red; 
+    background-color: transparent;
+}

@@ -1,0 +1,106 @@
+.footer_main_contact_us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_icon{
+    width: 40px; 
+    margin-left: 20px;
+}
+
+.left {
+    width: 40%;
+    height: 430px;
+    background-color: rgb(146, 79, 79);
+    padding: 7%
+}
+
+.rigth {
+    background-color: white;
+    width: 60%;
+    padding: 7%
+}
+
+.contact_name{
+    font-size: 12px;
+    text-align: left;
+}
+
+.contact_email{
+    font-size: 16px;
+    text-align: left;
+}
+
+.contact_line{
+    width: 100%;
+    border: 3px solid #E0E0E0;
+}
+
+.btn{
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgb(146, 79, 79);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer_main {
+    display: flex; 
+    justify-content: space-between; 
+    border-top: 1px solid #fff;
+}
+
+.footer_div {
+    text-align: right; 
+    margin-left: 30px; 
+    margin-bottom: 30px; 
+    margin-top: 50px;
+}
+
+.footer_div_logo {
+    text-align: left; 
+    margin-right: 30px; 
+    margin-bottom: 30px; 
+    margin-top: 100px;
+}
+
+.footer_span {
+    color: #ffffff82; 
+    font-size: 20px;
+}
+
+.contact_us {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: left;
+    color: white;
+}
+
+.contact_div {
+    font-size: 20px;
+    text-align: left;
+    color: white;
+}
+
+.contact_img {
+    margin-top: 3%;
+}
+
+.contact_text {
+    font-size: 16px; 
+    color: white;
+}
+
+.contact_div_right {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: left;
+}
+
+.contact_table {
+    margin: 5%;
+}
