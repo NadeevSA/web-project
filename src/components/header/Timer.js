@@ -1,7 +1,10 @@
+import '../../css/header.css'
+import Time from './Time.js'
 
 var countDownDate = new Date("May 1, 2023 00:00:00").getTime();
 
-var countdownfunction = setInterval(function() {
+
+setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
 
@@ -15,3 +18,16 @@ var countdownfunction = setInterval(function() {
     document.getElementById("MM").innerHTML = (minutes.toString().length == 1 ? '0' + minutes : minutes) + 'm';
     document.getElementById("SS").innerHTML = (seconds.toString().length == 1 ? '0' + seconds : seconds) + 's';
 }, 1000);
+
+function Timer() {
+    return (
+        <div className="header_div_main_text_50">
+            <Time id='DD' value="00d"></Time>
+            <Time id='HH' value="00h"></Time>
+            <Time id='MM' value="00m"></Time>
+            <Time id='SS' value="00s"></Time>
+        </div>
+    );
+}
+
+export default Timer;

@@ -1,5 +1,5 @@
 import './App.css'
-import Header from './components/Header'
+import Header from './components/header/Header.js'
 import Category from './components/Category'
 import About from './components/About'
 import Singers from './components/Singers'

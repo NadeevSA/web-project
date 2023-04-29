@@ -1,5 +1,5 @@
-import '../css/header.css'
-import '../js/timer.js'
+import '../../css/header.css'
+import Timer from './Timer.js';
 
 function Header() {
   return (
@@ -24,12 +24,7 @@ function Header() {
         <div className="header_div_main_text_25">
             <h1 className="header_div_h1">OF MUSIC IN 2023</h1>
         </div>
-        <div className="header_div_main_text_50">
-            <span id="DD" className="timer">00d</span>
-            <span id="HH" className="timer">00h</span>
-            <span id="MM" className="timer">00m</span>
-            <span id="SS" className="timer">00s</span>
-        </div>
+        <Timer></Timer>
     </header>
   );
 }
