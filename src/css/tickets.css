@@ -1,5 +1,5 @@
 .tickets_h1 {
-    color: #fff; 
+    color: black; 
     font-family:sans-serif; 
     font-size: 30px; 
     display: flex; 
@@ -38,6 +38,7 @@
 .tickets_card_h3 {
     color: rgba(0,0,0,0.7); 
     font-family: monospace;
+    margin: 4%;
 }
 
 .tickets_card_h3_info {

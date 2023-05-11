@@ -1,0 +1,51 @@
+.market_div {
+    width: 20%; 
+    background-color: #fff; 
+    display: inline-block; 
+    text-align: center;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.market_div:hover {
+    background-color: #ececec; 
+}
+
+.market_left {
+    width: 70%;
+}
+
+.market_right {
+    width: 30%;
+    height: 600px;
+    background-color: white;
+    margin: 1%;
+}
+
+.market_container {
+    display: flex;
+}
+
+.market_h1 {
+    color: black; 
+    font-family:sans-serif; 
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center;
+}
+
+.filter_price {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 30px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.market_h2 {
+    display: flex; 
+    justify-content: center;
+}

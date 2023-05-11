@@ -1,0 +1,8 @@
+.main, .main_comments {
+    padding: 5%;
+}
+
+.content {
+    height: 500px;
+    width: 100%;
+}

@@ -1,29 +1,46 @@
 import './App.css'
+import { Theme, presetGpnDefault } from '@consta/uikit/Theme';
 import Header from './components/header/Header.js'
-import Category from './components/Category'
-import About from './components/About'
-import Singers from './components/Singers'
-import Footer from './components/Footer'
-import Contact_us from './components/Contact_us'
-import Testimonials from './components/Testimonials'
-import Sponsors from './components/Sponsors'
+import Coins from './components/Coins/Coins.js'
+import Upper_text from './components/header/Upper_text'
+import Footer from './components/Footer/Footer'
+import Contact_us from './components/Footer/Contact_us'
 import Tickets from './components/Tickets'
-import Event from './components/Event'
+import News from './components/News/News'
+import Market from './components/Market/Market'
+import About from './components/About'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import New_detail from './components/News/New_detail';
 
 function App() {
-  return (
-    <body>
-      <Header></Header>
-      <Category></Category>
-      <About></About>
-      <Singers></Singers>
-      <Event></Event>
-      <Tickets></Tickets>
-      <Sponsors></Sponsors>
-      <Testimonials></Testimonials>
-      <Contact_us></Contact_us>
-      <Footer></Footer>
-    </body>
+
+  return (  
+  <BrowserRouter>
+    <Theme preset={presetGpnDefault}>
+      <Routes>
+        <Route path='/' element={
+          <body>
+            <Header />
+            <Coins />
+            <Upper_text />
+            <News />
+            <Market />
+            <Tickets />
+            <About />
+            <Contact_us />
+            <Footer />
+          </body>
+          } />
+        <Route path='/new_detail/:index' element={
+          <body>
+            <Header />
+            <Coins />
+            <New_detail/>
+          </body>
+        } />
+      </Routes>
+    </Theme>
+  </BrowserRouter>
   );
 }
 

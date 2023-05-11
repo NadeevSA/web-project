@@ -1,40 +1,29 @@
-.category:hover {
-    border: 7px solid rgb(189,170,142);
-    cursor: pointer;
-}
-
-.category:hover p{
-    color: rgb(189,170,142)
-}
-
-.category:hover h1{
-    color: rgb(189,170,142)
-}
-
 .category {
-    border: 7px solid white;
-    height: 300px; 
-    width: 20%; 
-    background-color: black; 
-    border-radius: 5%; 
-    margin: 1%;
+    background-color: white;  
     display: inline-block;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    width: 20%;
 }
 
-.category p, .category h1{
-    color: #fff;
-    text-align: center;
+.category:hover {
+    background-color: #ececec; 
 }
 
-.category_h1 {
-    color: #fff; 
-    font-family:sans-serif; 
-    font-size: 30px; 
-    display: flex; 
-    justify-content: center;
+.category div {
+    display: flex;
+    justify-content: space-between;
 }
 
-.category_div {
-    display: flex; 
-    justify-content: center;
+h2 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.up {
+    color: green;
+}
+
+.down {
+    color: red;
 }

@@ -9,14 +9,14 @@
 }
 
 .modal_content{
-    background-color: black;
+    background-color: white;
     border: 5px solid white;
     position: fixed;
-    left: 40%;
-    top: 35%;
+    left: 35%;
+    top: 5%;
     padding: 20px;
-    width: 20%;
-    height: 30%;
+    width: 30%;
+    height: 80%;
 }
 
 .close{

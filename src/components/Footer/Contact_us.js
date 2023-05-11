@@ -1,4 +1,4 @@
-import '../css/footer.css'
+import '../../css/footer.css'
 
 function Contact_us() {
   return (
@@ -9,15 +9,15 @@ function Contact_us() {
                 <div className="contact_div">Have an inquiry? We’ll be happy to assist you</div>
                 <div>
                     <div> 
-                        <img className="contact_img" src={require('../img/V1.png')} />
+                        <img className="contact_img" src={require('../../img/V1.png')} />
                         <h5 className="contact_text">+92 333 6527366</h5>
                     </div>
                     <div> 
-                        <img src={require('../img/v2.png')} />
+                        <img src={require('../../img/v2.png')} />
                         <h5 className="contact_text">abuzer@greelogix.com</h5>
                     </div>
                     <div> 
-                        <img src={require('../img/V3.png')} />
+                        <img src={require('../../img/V3.png')} />
                         <h5 className="contact_text">Plot 252, Block L Phase 2 Johar Town, Lahore, PK</h5>
                     </div>
                 </div>

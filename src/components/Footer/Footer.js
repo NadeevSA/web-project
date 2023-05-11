@@ -1,4 +1,4 @@
-import '../css/footer.css'
+import '../../css/footer.css'
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
         </div>
         <div className="footer_div_logo">
             <span className="footer_span">
-                Musik. ©️ musik.com, 2023
+                WOC. ©️ WorldOfCoins.com, 2023
             </span>
         </div>
     </footer>
