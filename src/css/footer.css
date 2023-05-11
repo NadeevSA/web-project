@@ -33,7 +33,8 @@
 
 .contact_line{
     width: 100%;
-    border: 3px solid #E0E0E0;
+    border: none;
+    border-bottom: 5px solid #E0E0E0;
 }
 
 .btn{
@@ -97,10 +98,16 @@
 .contact_div_right {
     font-weight: 700;
     font-size: 34px;
-    line-height: 44px;
+    line-height: 20px;
     text-align: left;
 }
 
 .contact_table {
     margin: 5%;
+}
+
+.informer_submit {
+    position: fixed;
+    bottom: 25%;
+    right: 30%;
 }

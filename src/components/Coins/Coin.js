@@ -1,16 +1,33 @@
 import '../../css/category.css'
-import { Stats } from '@consta/stats/Stats';
 
 function Coin(props) {
+    var outputPrice = (price) => {
+        let priceSplit = price.split('.')
+        return priceSplit[0] + '.' + priceSplit[1].substr(0, 2)
+    }
+
     return (
-        <div className="category">
-            <Stats
-                value={props.price}
-                iconArrowRate="auto"
-                title={props.symbol}
-                rate={props.percent_change_24h}
-                size="s" />
-        </div>
+        <a className='coin' href={props.explorer}>
+            <span className='name'>
+                {props.name}
+            </span>
+            {
+                props.changePercent24Hr > 0 ?
+                    <div className='up'>&#9650;</div> :
+                    <div className='down'>&#9660;</div>
+            }
+            {
+                props.changePercent24Hr > 0 ?
+                    <div className='CoinPriceUp'>
+                        <h5>${outputPrice(props.priceUsd)}</h5>
+                        <h5>{outputPrice(props.changePercent24Hr)}%</h5>
+                    </div> :
+                    <div className='CoinPriceDown'>
+                        <h5>${outputPrice(props.priceUsd)}</h5>
+                        <h5>{outputPrice(props.changePercent24Hr)}%</h5>
+                    </div>
+            }
+        </a>
     );
 }
 

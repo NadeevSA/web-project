@@ -1,32 +1,38 @@
 import '../../css/category.css'
 import Coin from './Coin'
-import { fetchCoin } from '../../api/requests'
+import { fetchChart } from '../../api/requests'
 import React, { useState, useEffect } from 'react'; 
 
 function Coins() {
-  var [coin, setCoin] = useState(null);
+  var [coins, setCoins] = useState(null)
+  var [delay, setDelay] = useState(50)
+
+  setInterval(() => {
+    var blockCoins = document.getElementById("blockCoins")
+    if (blockCoins.scrollLeft == blockCoins.scrollWidth - blockCoins.clientWidth) {
+      blockCoins.scrollLeft = 0
+    }
+    blockCoins.scrollLeft += 1
+  }, delay)
 
   useEffect(() => {
-      fetchCoin(1,5).then(res => {
-          setCoin(res);
+    fetchChart().then(res => {
+          setCoins(res)
       })
-  }, []);
+  }, [])
 
   return (
-    <section id="category">
-        <div>
+    <div id='blockCoins' className="category">
           {
-            coin != null ? coin.data.map(value => {
+            coins ? coins.data.map(element => {
               return <Coin
-                      symbol={value.symbol}
-                      price={value.price_usd}
-                      percent_change_24h={value.percent_change_24h}
-                    />
-            })
-            : "Загрузка"
+                explorer = {element.explorer} 
+                name = {element.name}
+                priceUsd = {element.priceUsd}
+                changePercent24Hr = {element.changePercent24Hr} />
+            }) : "Загрузка"
           }
-        </div>
-    </section>
+    </div>
   );
 }
 

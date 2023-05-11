@@ -1,23 +1,10 @@
 .category {
-    background-color: white;  
-    display: inline-block;
-    flex-wrap: nowrap;
-    cursor: pointer;
-    width: 20%;
-}
-
-.category:hover {
-    background-color: #ececec; 
-}
-
-.category div {
     display: flex;
-    justify-content: space-between;
-}
-
-h2 {
-    margin-left: 5px;
-    margin-right: 5px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    background-color: white;
 }
 
 .up {
@@ -26,4 +13,40 @@ h2 {
 
 .down {
     color: red;
+}
+
+
+.coin {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+}
+
+.coin:hover {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: #c7c2c2;
+    cursor: pointer;
+}
+
+.CoinPriceDown {
+    background-color:rgba(186, 4, 2, 0.1);
+    display: flex;
+}
+
+.CoinPriceUp {
+    background-color:rgba(2, 186, 66, 0.1);
+    display: flex;
+}
+
+.CoinPriceUp h5, .CoinPriceDown h5 {
+    margin-left: 10px;
+}
+
+.name {
+    margin-left: 10px;
+    margin-right: 10px;
 }
