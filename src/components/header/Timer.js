@@ -1,4 +1,4 @@
-import '../../css/header.css'
+import './Header.css'
 import Time from './Time.js'
 import { useState } from 'react'
 

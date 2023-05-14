@@ -1,11 +1,15 @@
-import '../../css/market.css'
+import './Css/Market.css'
 
 function Order(props) {
+    var outputPrice = (price) => {
+        let priceSplit = price.split('.')
+        return priceSplit[0] + '.' + priceSplit[1].substr(0, 2)
+    }
+
     return (
         <div className='market_div'>
-            <h2>{props.base}</h2>
-            <h2>price ${props.price_usd.toFixed(3)}</h2>
-            <h2>volume {props.volume.toFixed(3)}</h2>
+            <h2 className='market_name_coin'>{props.name}</h2>
+            <h2>price $ {outputPrice(props.priceUsd)}</h2>
         </div>
     );
 }

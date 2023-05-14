@@ -1,4 +1,4 @@
-import '../../css/news.css'
+import './Css/News.css'
 import  { useNavigate } from 'react-router-dom'
 
 function New_short(props) {

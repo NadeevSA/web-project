@@ -1,14 +1,14 @@
 import './App.css'
 import { Theme, presetGpnDefault } from '@consta/uikit/Theme';
-import Header from './components/header/Header.js'
+import Header from './components/Header/Header.js'
 import Coins from './components/Coins/Coins.js'
-import Upper_text from './components/header/Upper_text'
+import Upper_text from './components/Header/Upper_text.js'
 import Footer from './components/Footer/Footer'
 import Contact_us from './components/Footer/Contact_us'
-import Tickets from './components/Tickets'
+import Tickets from './components/Tickets/Tickets'
 import News from './components/News/News'
 import Market from './components/Market/Market'
-import About from './components/About'
+import About from './components/About/About'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import New_detail from './components/News/New_detail';
 
@@ -24,8 +24,8 @@ function App() {
             <Coins />
             <Upper_text />
             <News />
-            <Market />
             <Tickets />
+            <Market />
             <About />
             <Contact_us />
             <Footer />

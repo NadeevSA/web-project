@@ -3,7 +3,7 @@
     font-family:sans-serif; 
     font-size: 30px; 
     display: flex; 
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .tickets_div {
@@ -13,7 +13,7 @@
 
 .tickets_card_1 {
     height: 300px; 
-    width: 20%; 
+    width: 30%; 
     background-color: #fff; 
     border-radius: 5%; 
     margin: 1%; 
@@ -21,6 +21,11 @@
     text-align: center; 
     border-top: 15px solid rgb(189,170,142); 
     box-shadow: -5px 5px 10px grey;
+}
+
+.tickets_card_1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px grey;
 }
 
 .tickets_card_1_h1 {
@@ -48,7 +53,7 @@
 
 .tickets_card_2_div {
     height: 300px; 
-    width: 20%; 
+    width: 30%; 
     background-color: #fff; 
     border-radius: 5%; 
     margin: 1%; 
@@ -74,7 +79,7 @@
 
 .tickets_card_3_div {
     height: 300px; 
-    width: 20%; 
+    width: 30%; 
     background-color: #fff; 
     border-radius: 5%; 
     margin: 1%; 

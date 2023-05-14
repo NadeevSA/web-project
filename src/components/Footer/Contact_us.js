@@ -1,4 +1,4 @@
-import '../../css/footer.css'
+import './Footer.css'
 import { Informer } from '@consta/uikit/Informer'
 import { useEffect, useState } from 'react'
 
@@ -8,12 +8,13 @@ function Contact_us() {
     var [email, setEmail] = useState('')
     var [msg, setMsg] = useState('')
 
+    var delay = 4000
     var title = name + ' ' + email
     var message = 'Your Message: ' + msg + '. Success submit'
 
     console.log(name)
     useEffect(() => {
-        setTimeout(() => setInformer(false), 4000)
+        setTimeout(() => setInformer(false), delay)
     }, [informer])
 
     return (
@@ -61,7 +62,10 @@ function Contact_us() {
                                 value={msg} 
                                 onInput={(e) => { setMsg(e.currentTarget.value)}} />
                         </div>
-                        <button className="btn" onClick={() => setInformer(true)}>Submit</button>
+                        <button
+                            disabled={name == '' || email == '' || msg == ''}
+                            className="btn" 
+                            onClick={() => setInformer(true)}>Submit</button>
                     </div>
                 </div>
             </div>

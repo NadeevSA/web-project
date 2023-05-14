@@ -1,11 +1,10 @@
-import '../../css/category.css'
+import './Coins.css'
 import Coin from './Coin'
-import { fetchChart } from '../../api/requests'
+import { fetchChart } from '../../api/Requests.js'
 import React, { useState, useEffect } from 'react'; 
 
 function Coins() {
   var [coins, setCoins] = useState(null)
-  var [delay, setDelay] = useState(50)
 
   setInterval(() => {
     var blockCoins = document.getElementById("blockCoins")
@@ -13,7 +12,7 @@ function Coins() {
       blockCoins.scrollLeft = 0
     }
     blockCoins.scrollLeft += 1
-  }, delay)
+  }, 50)
 
   useEffect(() => {
     fetchChart().then(res => {

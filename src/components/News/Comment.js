@@ -1,4 +1,4 @@
-import '../../css/comment.css'
+import './Css/Comment.css'
 
 function Comment(props) {
     function randomInteger(min, max) {

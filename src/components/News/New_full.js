@@ -1,14 +1,8 @@
-import { useState } from 'react';
-import '../../css/news.css'
-import New_detail from './New_detail';
+import './Css/News.css'
 import  { useNavigate } from 'react-router-dom'
 
 function New_full(props) {
-    let navigate = useNavigate();
-    var [openNew, setOpenNew] = useState(false)
-    function closeWindow() {
-        setOpenNew(false)
-    }
+    let navigate = useNavigate()
 
     return (
         <div>

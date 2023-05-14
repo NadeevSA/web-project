@@ -1,4 +1,4 @@
-import '../../css/header.css'
+import './Header.css'
 import Timer from './Timer.js';
 
 function Upper_text() {

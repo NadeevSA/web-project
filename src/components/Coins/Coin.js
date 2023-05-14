@@ -1,4 +1,4 @@
-import '../../css/category.css'
+import './Coins.css'
 
 function Coin(props) {
     var outputPrice = (price) => {

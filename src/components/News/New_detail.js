@@ -1,8 +1,8 @@
-import '../../css/new_detail.css'
+import './Css/New_detail.css'
 import Comment from './Comment';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchComment } from '../../api/requests';
+import { fetchComment } from '../../api/Requests.js';
 
 function New_detail() {
     const params = useParams();

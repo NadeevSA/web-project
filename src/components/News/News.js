@@ -1,5 +1,5 @@
-import '../../css/news.css'
-import { fetchNew } from '../../api/requests';
+import './Css/News.css'
+import { fetchNew } from '../../api/Requests.js';
 import React, { useState, useEffect } from 'react';
 import New_full from './New_full';
 import New_short from './New_short';

@@ -1,5 +1,5 @@
-import '../css/about.css'
-import coin from '../img/coin.png'
+import './About.css'
+import coin from '../../img/coin.png'
 import { useEffect, useState } from 'react'
 
 function About() {
