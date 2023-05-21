@@ -31,7 +31,7 @@ function News() {
     }, []);
     
     return (
-        <div>
+        <div id="news">
             <h1 className="news_h1">News</h1>
             <div className="news_container">
                 <div>

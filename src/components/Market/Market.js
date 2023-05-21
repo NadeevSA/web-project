@@ -14,6 +14,7 @@ function Market() {
         fetchChart().then(res => {
             setCoins(res.data)
             setTotalPage(Math.ceil(res.data.length / 8))
+            console.log(res.data)
         })
     }, []);
 
@@ -22,30 +23,31 @@ function Market() {
             var number = coins.filter(c => c.name.toLowerCase()
             .includes(nameCoin.toLowerCase())).length
             setTotalPage(Math.ceil(number / 8))
-            doCurrentPageTransparent()
+            if (currentPage != 1){
+                ChangeColorCurrentPage('transparent')
+            }
             setCurrentPage(1)
         }
     }, [nameCoin])
     
     useEffect(() => {
-        let btn = document.getElementById('pag_btn_' + currentPage)
-        if (btn != null) {
-            btn.style.background = 'white'
-        }
+        ChangeColorCurrentPage('white')
     }, [currentPage])
 
     function callback(page) {
-        doCurrentPageTransparent()
+        ChangeColorCurrentPage('transparent')
         setCurrentPage(page)
     }
 
-    function doCurrentPageTransparent() {
+    function ChangeColorCurrentPage(color) {
         let btn = document.getElementById('pag_btn_' + currentPage)
-        btn.style.background = 'transparent'
+        if (btn != null) {
+            btn.style.background = color
+        }
     }
 
     return (
-        <div>
+        <div id="Coins">
             <h1 className="market_h1">Coins</h1>
             <div>
                 <input className='market_input' 
@@ -55,17 +57,18 @@ function Market() {
             </div>
             <div className='market_main'>
             {
-                coins && coins
+                coins && coins 
                 .filter(c => c.name.toLowerCase().includes(nameCoin.toLowerCase()))
                 .slice((currentPage - 1) * 8, currentPage * 8)
                 .map((element) => {
-                    return <Order 
+                    return <Order
                             name={element.name}
-                            rank={element.rank}
+                            explorer={element.explorer}
                             symbol={element.symbol}
                             priceUsd={element.priceUsd}
                             changePercent24Hr={element.changePercent24Hr}
-                            supply={element.supply} />
+                            supply={element.supply}
+                            />
                 })
             }
             </div>

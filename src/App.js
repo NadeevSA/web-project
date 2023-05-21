@@ -13,7 +13,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import New_detail from './components/News/New_detail';
 
 function App() {
-
   return (  
   <BrowserRouter>
     <Theme preset={presetGpnDefault}>

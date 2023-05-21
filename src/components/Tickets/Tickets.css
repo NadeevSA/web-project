@@ -28,6 +28,16 @@
     box-shadow: 0px 10px 10px grey;
 }
 
+.tickets_card_2_div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px grey;
+}
+
+.tickets_card_3_div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px grey;
+}
+
 .tickets_card_1_h1 {
     font-size: 25px; 
     margin: 10px 0 10px 0; 
