@@ -13,13 +13,13 @@ function New_detail() {
     }
 
     useEffect(() => {
-        let items = JSON.parse(localStorage.getItem('business'))
+        let items = JSON.parse(sessionStorage.getItem('business'))
             .data.find(r => r.id == params.index);
         if (items) {
             setNews(items);
         }
         else {
-            let items = JSON.parse(localStorage.getItem('technology'))
+            let items = JSON.parse(sessionStorage.getItem('technology'))
                 .data.find(r => r.id == params.index);
             if (items) {
                 setNews(items);

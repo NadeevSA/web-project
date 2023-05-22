@@ -2,7 +2,7 @@ import './About.css'
 import coin from '../../img/coin.png'
 import { useEffect, useState } from 'react'
 
-function About() {
+export default function About() {
   var [rotation, setRoration] = useState(true)
 
   useEffect(() => {
@@ -30,5 +30,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

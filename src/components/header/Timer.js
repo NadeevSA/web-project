@@ -2,7 +2,7 @@ import './Header.css'
 import Time from './Time.js'
 import { useState } from 'react'
 
-function Timer() {
+export default function Timer() {
     var [hours, setHours] = useState('00h');
     var [minutes, setMinutes] = useState('00m');
     var [seconds, setSeconds] = useState('00s');
@@ -28,5 +28,3 @@ function Timer() {
         </div>
     );
 }
-
-export default Timer;

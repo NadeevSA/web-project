@@ -1,7 +1,6 @@
-import { useState } from 'react'
 import './Window_modal.css' 
 
-function Window_modal(props) {
+export default function Window_modal(props) {
     
 
     return (
@@ -15,5 +14,3 @@ function Window_modal(props) {
         </div>
     );
 }
-
-export default Window_modal;

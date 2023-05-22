@@ -1,6 +1,6 @@
 import './Css/Pagination.css'
 
-function Pagination_btn(props) {
+export default function Pagination_btn(props) {
     return (
         <div 
             id={'pag_btn_' + props.number} 
@@ -10,5 +10,3 @@ function Pagination_btn(props) {
         </div>
     );
 }
-
-export default Pagination_btn;

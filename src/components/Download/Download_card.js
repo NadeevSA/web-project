@@ -1,9 +1,6 @@
-import './Tickets.css'
-import { useState } from 'react'
+import './Download.css'
 
-function Download_card(props) {
-    var [open1, setOpen1] = useState(false)
-
+export default function Download_card(props) {
     return (
         <div className={props.mainClass}>
             <h1 className={props.h1Class}>{props.h1}</h1>
@@ -13,5 +10,3 @@ function Download_card(props) {
         </div>
     );
 }
-
-export default Download_card;

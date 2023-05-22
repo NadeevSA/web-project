@@ -5,14 +5,14 @@ import Coins from './components/Coins/Coins.js'
 import Upper_text from './components/Header/Upper_text.js'
 import Footer from './components/Footer/Footer'
 import Contact_us from './components/Footer/Contact_us'
-import Tickets from './components/Tickets/Tickets'
+import Download from './components/Download/Download'
 import News from './components/News/News'
 import Market from './components/Market/Market'
 import About from './components/About/About'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import New_detail from './components/News/New_detail';
 
-function App() {
+export default function App() {
   return (  
   <BrowserRouter>
     <Theme preset={presetGpnDefault}>
@@ -23,7 +23,7 @@ function App() {
             <Coins />
             <Upper_text />
             <News />
-            <Tickets />
+            <Download />
             <Market />
             <About />
             <Contact_us />
@@ -42,5 +42,3 @@ function App() {
   </BrowserRouter>
   );
 }
-
-export default App;

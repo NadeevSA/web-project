@@ -2,7 +2,7 @@ import './Footer.css'
 import Contact_us_left from './Contact_us_left'
 import Contact_us_right from './Contact_us_right'
 
-function Contact_us() {
+export default function Contact_us() {
     return (
         <section id="Contact_us">
             <div className="footer_main_contact_us">
@@ -12,5 +12,3 @@ function Contact_us() {
         </section>
     );
 }
-
-export default Contact_us;

@@ -1,6 +1,6 @@
 import './Footer.css'
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer_main">
         <div className="footer_div">
@@ -18,5 +18,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

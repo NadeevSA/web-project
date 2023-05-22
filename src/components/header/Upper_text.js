@@ -1,7 +1,7 @@
 import './Header.css'
 import Timer from './Timer.js';
 
-function Upper_text() {
+export default function Upper_text() {
   return (
     <header className="header_main">
         <div className="header_div_main_text_15">
@@ -14,5 +14,3 @@ function Upper_text() {
     </header>
   );
 }
-
-export default Upper_text;

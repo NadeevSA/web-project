@@ -1,6 +1,6 @@
 import './Header.css'
 
-function Header() {
+export default function Header() {
   return (
     <header className="header_main">
         <div className="header_div">
@@ -18,5 +18,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

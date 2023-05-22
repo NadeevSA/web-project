@@ -3,7 +3,7 @@ import Coin from './Coin'
 import { fetchChart } from '../../api/Requests.js'
 import React, { useState, useEffect } from 'react'; 
 
-function Coins() {
+export default function Coins() {
   var [coins, setCoins] = useState(null)
 
   setInterval(() => {
@@ -34,5 +34,3 @@ function Coins() {
     </div>
   );
 }
-
-export default Coins;

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Css/Market.css'
 import Modal_coin from './Modal_coin'
 
-function Order(props) {
+export default function Order(props) {
     var [open, setOpen] = useState(false)
 
     var outputPrice = (price) => {
@@ -31,5 +31,3 @@ function Order(props) {
 
     )
 }
-
-export default Order;

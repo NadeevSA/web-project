@@ -1,10 +1,10 @@
 import Window_modal from '../Window_modal'
 import Download_card from './Download_card'
-import './Tickets.css'
+import './Download.css'
 import { useState } from 'react'
 
 
-function Tickets() {
+export default function Download() {
     var [open, setOpen] = useState(false)
     var [nameVersion, setNameVersion] = useState('')
     
@@ -66,5 +66,3 @@ function Tickets() {
         </div>
     );
 }
-
-export default Tickets;

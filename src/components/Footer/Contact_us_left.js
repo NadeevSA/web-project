@@ -3,7 +3,7 @@ import v1 from '../../img/V1.png'
 import v2 from '../../img/v2.png'
 import v3 from '../../img/V3.png'
 
-function Contact_us_left() {
+export default function Contact_us_left() {
     return (
         <div className="left">
             <h2 className="contact_us">Contact us</h2>
@@ -25,5 +25,3 @@ function Contact_us_left() {
         </div>
     );
 }
-
-export default Contact_us_left;

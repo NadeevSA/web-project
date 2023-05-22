@@ -2,7 +2,7 @@ import './Footer.css'
 import { useState } from 'react'
 import Window_modal from '../Window_modal'
 
-function Contact_us_right() {
+export default function Contact_us_right() {
     var [informer, setInformer] = useState(false)
     var [name, setName] = useState('')
     var [email, setEmail] = useState('')
@@ -50,5 +50,3 @@ function Contact_us_right() {
         </div>
     );
 }
-
-export default Contact_us_right;

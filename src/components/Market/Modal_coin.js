@@ -1,6 +1,6 @@
 import './Css/Modal_coin.css'
 
-function Modal_coin(props) {
+export default function Modal_coin(props) {
     var outputPrice = (price) => {
         let priceSplit = price.split('.')
         return priceSplit[0] + '.' + priceSplit[1].substr(0, 2)
@@ -21,5 +21,3 @@ function Modal_coin(props) {
         </div>
     );
 }
-
-export default Modal_coin;

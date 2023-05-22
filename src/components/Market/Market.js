@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Order from './Order'
 import Pagination from './Pagination';
 
-function Market() {
+export default function Market() {
     var [coins, setCoins] = useState(null)
     var [currentPage, setCurrentPage] = useState(1)
     var [nameCoin, setNameCoin] = useState('')
@@ -76,5 +76,3 @@ function Market() {
         </div>
     );
 }
-
-export default Market;

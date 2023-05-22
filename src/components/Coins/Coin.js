@@ -1,6 +1,6 @@
 import './Coins.css'
 
-function Coin(props) {
+export default function Coin(props) {
     var outputPrice = (price) => {
         let priceSplit = price.split('.')
         return priceSplit[0] + '.' + priceSplit[1].substr(0, 2)
@@ -30,5 +30,3 @@ function Coin(props) {
         </a>
     );
 }
-
-export default Coin;
