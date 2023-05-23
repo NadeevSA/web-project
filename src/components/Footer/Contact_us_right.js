@@ -37,7 +37,7 @@ export default function Contact_us_right() {
                 </div>
                 <button
                     disabled={name == '' || email == '' || msg == ''}
-                    className="btn"
+                    className="btn_footer"
                     onClick={() => setInformer(true)}>Submit</button>
             </div>
             {

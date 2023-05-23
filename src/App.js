@@ -18,7 +18,7 @@ export default function App() {
     <Theme preset={presetGpnDefault}>
       <Routes>
         <Route path='/' element={
-          <body>
+          <div>
             <Header />
             <Coins />
             <Upper_text />
@@ -28,14 +28,14 @@ export default function App() {
             <About />
             <Contact_us />
             <Footer />
-          </body>
+          </div>
           } />
         <Route path='/new_detail/:index' element={
-          <body>
+          <div>
             <Header />
             <Coins />
             <New_detail/>
-          </body>
+          </div>
         } />
       </Routes>
     </Theme>

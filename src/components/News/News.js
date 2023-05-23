@@ -37,8 +37,9 @@ function News() {
             <div className="news_container">
                 <div>
                     {
-                        news != null ? news.data.slice(0, endIndex).map(element => {
+                        news != null ? news.data.slice(0, endIndex).map((element, key) => {
                             return <New_full
+                                key={key}
                                 id={element.id}
                                 imageUrl={element.imageUrl}
                                 title={element.title}
@@ -52,8 +53,9 @@ function News() {
                 </div>
                 <div className='news_rigth_container'>
                     {
-                        newsTechnology != null ? newsTechnology.data.slice(0, 5).map(element => {
+                        newsTechnology != null ? newsTechnology.data.slice(0, 5).map((element, key) => {
                             return <New_short
+                                key={key}
                                 id={element.id}
                                 imageUrl={element.imageUrl}
                                 title={element.title} />

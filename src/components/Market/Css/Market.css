@@ -11,6 +11,10 @@
     border-radius: 10px;
 }
 
+.market_div:hover {
+    font-size: 15px;
+}
+
 .market_left {
     width: 70%;
 }

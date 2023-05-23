@@ -14,7 +14,6 @@ export default function Market() {
         fetchChart().then(res => {
             setCoins(res.data)
             setTotalPage(Math.ceil(res.data.length / 8))
-            console.log(res.data)
         })
     }, []);
 
@@ -60,8 +59,9 @@ export default function Market() {
                 coins && coins 
                 .filter(c => c.name.toLowerCase().includes(nameCoin.toLowerCase()))
                 .slice((currentPage - 1) * 8, currentPage * 8)
-                .map((element) => {
+                .map((element, key) => {
                     return <Order
+                            key={key}
                             name={element.name}
                             explorer={element.explorer}
                             symbol={element.symbol}

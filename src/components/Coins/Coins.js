@@ -23,8 +23,9 @@ export default function Coins() {
   return (
     <div id='blockCoins' className="category">
           {
-            coins ? coins.data.map(element => {
+            coins ? coins.data.map((element, key) => {
               return <Coin
+                key={key}
                 explorer = {element.explorer} 
                 name = {element.name}
                 priceUsd = {element.priceUsd}
