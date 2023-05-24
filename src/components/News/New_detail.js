@@ -45,8 +45,9 @@ function New_detail() {
             <div className='main_comments'>
                 <h1>Comments</h1>
                 {
-                    comments && comments.comments.map((element) => {
-                        return <Comment 
+                    comments && comments.comments.map((element, key) => {
+                        return <Comment
+                                    key={key}
                                     content={element.body}
                                     username={element.user.username}
                                 />
