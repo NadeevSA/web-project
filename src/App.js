@@ -14,7 +14,7 @@ import New_detail from './components/News/New_detail';
 
 export default function App() {
   return (  
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Theme preset={presetGpnDefault}>
       <Routes>
         <Route path='/' element={
