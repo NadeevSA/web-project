@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/web-project/static/css/main.ded66f88.css",
+    "main.js": "/web-project/static/js/main.baecf1fc.js",
+    "static/media/coin.png": "/web-project/static/media/coin.024718688c725cef2860.png",
+    "static/media/Inter-Bold.woff": "/web-project/static/media/Inter-Bold.8f8c5ea1d3a580b04e28.woff",
+    "static/media/Inter-SemiBold.woff": "/web-project/static/media/Inter-SemiBold.8709b7f1f6fabaaa7896.woff",
+    "static/media/Inter-ExtraBold.woff": "/web-project/static/media/Inter-ExtraBold.589aaa938b49be935427.woff",
+    "static/media/Inter-Medium.woff": "/web-project/static/media/Inter-Medium.2faa383bb66313c2a072.woff",
+    "static/media/Inter-ExtraLight.woff": "/web-project/static/media/Inter-ExtraLight.abc6c6573f4198a1aac3.woff",
+    "static/media/Inter-Light.woff": "/web-project/static/media/Inter-Light.58e178ba5b1b06e45495.woff",
+    "static/media/Inter-Black.woff": "/web-project/static/media/Inter-Black.573292a805d572a8fab2.woff",
+    "static/media/Inter-Thin.woff": "/web-project/static/media/Inter-Thin.93cdaa39b9e998c90fd7.woff",
+    "static/media/Inter-Regular.woff": "/web-project/static/media/Inter-Regular.f8c4b51c613b8c0f88ea.woff",
+    "static/media/Inter-ExtraBold.woff2": "/web-project/static/media/Inter-ExtraBold.8b6d61241a6bfe95bb8e.woff2",
+    "static/media/Inter-Bold.woff2": "/web-project/static/media/Inter-Bold.52f101528f148535b992.woff2",
+    "static/media/Inter-SemiBold.woff2": "/web-project/static/media/Inter-SemiBold.dd34801fd60f17ce9fc0.woff2",
+    "static/media/Inter-Medium.woff2": "/web-project/static/media/Inter-Medium.9e5be4a657e25b6d4287.woff2",
+    "static/media/Inter-ExtraLight.woff2": "/web-project/static/media/Inter-ExtraLight.3576207fe0c462ea5536.woff2",
+    "static/media/Inter-Light.woff2": "/web-project/static/media/Inter-Light.f25729e3394c0829c87b.woff2",
+    "static/media/Inter-Black.woff2": "/web-project/static/media/Inter-Black.37ea900f5b2e5e5bc7aa.woff2",
+    "static/media/Inter-Thin.woff2": "/web-project/static/media/Inter-Thin.f2bbf13ef416e260c1f9.woff2",
+    "static/media/Inter-Regular.woff2": "/web-project/static/media/Inter-Regular.91d1538224164e1fba3a.woff2",
+    "index.html": "/web-project/index.html",
+    "main.ded66f88.css.map": "/web-project/static/css/main.ded66f88.css.map",
+    "main.baecf1fc.js.map": "/web-project/static/js/main.baecf1fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ded66f88.css",
+    "static/js/main.baecf1fc.js"
+  ]
+}
